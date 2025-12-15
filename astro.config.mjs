@@ -59,5 +59,12 @@ export default defineConfig({
         "~": fileURLToPath(new URL("./src", import.meta.url)),
       },
     },
+    server: {
+      hmr: true,
+      middlewareMode: false,
+      watch: {
+        aggregateTimeout: 300,
+      }
+    }
   },
 });
