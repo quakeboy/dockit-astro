@@ -1,5 +1,6 @@
 ---
 import Search from "./Search.astro";
+import Button from "../user-components/Button.astro";
 const { data } = Astro.locals.starlightRoute.entry;
 const { title = data.title, tagline } = data.hero || {};
 const { sidebar } = Astro.locals.starlightRoute;
@@ -21,49 +22,83 @@ const is404 = Astro.locals.starlightRoute?.id === "404";
 <div
   class="hero flex flex-col items-center mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-35"
 >
+
+<div class="max-w-screen-xl text-center py-8 lg:py-8 lg:px-12">
+  <a class="inline-flex justify-between items-center py-1 px-1 p-4 text-sm rounded-full border-2" role="alert">
+      <span class="text-sm font-medium pl-4 pr-4">This is an unmodified quote from the founder of Tailscale in an interview...</span> 
+  </a>
+</div>
+
   {title && <h1 set:html={title} class="mb-8 text-center rounded-2xl" />}
-  {tagline && <p set:html={tagline} class="text-xl text-center" />}
+  {tagline && <p set:html={tagline} class="text-xl text-center"/>}
+
+  
+
+
+  <section>
+    <div class="py-8 px-4 mx-auto lg:py-16 lg:px-6">
+        <div class="text-center max-w-4xl text-gray-500 sm:text-lg dark:text-gray-400">
+            <!-- <hr class="border-1 max-w-16 m-auto"> -->
+            <h2 class="mt-8 py-12 text-4xl tracking-tight font-bold text-gray-900 dark:text-white">Building a company that serves developers is hard... but, you don't have to figure out the marketing yourself</h2>
+            <div class="text-left max-w-2xl mb-4 font-light m-auto">
+              <p class="mb-4">A while ago you've realized you cannot build an actual business on just word-of-mouth or the unrepeatable growth spikes from being on the front page of <i>Product Hunt, Hacker News</i> etc. You cannot rely on luck.</p>
+              <p class="mb-4">You built something developers want to use. That part worked.</p>
+              <p class="mb-4">
+                The problem is, the right developers don't realize you solve their problem the way they want it solved.
+                So you're invisible to them. And the developers who do find you aren't the ones who matter for your business.
+              </p>
+              <p class="mb-4">
+                This is a marketing strategy problem. (and no, I'm not here to throw strategy and sit on the sidelines. But more on that later...)               </p>
+                <p class="mb-4">
+  This is not a "we need more leads" problem. Not a tactical one.
+</p>
+<p class="mb-4">
+Here's what this looks like in practice:
+                You get signups. Some are great. Some are pulling the wrong use case. Some are pulling competitors' customers. You never quite figured out the pattern of which is which.               </p>
+                <p class="mb-4">
+  So you keep shipping more features hoping one sticks, or you run campaigns that get noise, not signal.
+              </p>
+              <p class="mb-4">  
+                And you can't explain to investors or your board exactly why some of your early growth worked and whether you can do it again.
+                That's the blind spot.               </p>
+                <p class="mb-4">
+  It's not that you're bad at marketing. It's that so far you've hired marketing experts but not someone who can lead and show you how your entire company's marketing has to work.
+</p>
+<p class="mb-4">You could spend years optimizing the wrong things. Like others have. Or you could figure out what's actually off right now.</p>
+            </div>
+            <a href="#" class="inline-flex items-center font-medium text-primary-600 hover:text-primary-800 dark:text-primary-500 dark:hover:text-primary-700">
+                Learn more
+                <svg class="ml-1 w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+            </a>
+        </div>
+    </div>
+  </section>
+
 
   {
     !is404 && (
-      <div class="mt-12 max-w-4xl">
-        <div class="search-container rounded-2xl p-2 mb-6">
-          <div class="search-bar">
-            <Search />
-          </div>
-        </div>
+    <div class="flex gap-4 justify-center mt-8">
+          <Button
+            label="Book a 15-min Clarity Call"}
+            link="/getting-started/introduction/overview/"
+            variant="primary"
+          />
+          <Button
+            label="Explore More"}
+            link="/getting-started/introduction/overview/"
+            variant="outline-primary"
+          />
 
-        <div class="flex justify-center items-center flex-wrap gap-4">
-          <p class="text-base font-normal">
-            {Astro.locals.t("hero.popular", "Popular")}:
-          </p>
-          <div class="flex gap-4 badges px-3 py-2.5 rounded-xl flex-wrap justify-center">
-            {sidebar.map((item: any) => {
-              const href = getFirstHref(item);
-              return (
-                <div class="badge rounded-lg px-2 py-1.5 group transition">
-                  <a
-                    class="cursor-pointer text-text no-underline group-hover:text-black dark:group-hover:text-white transition-colors"
-                    href={href}
-                  >
-                    {item.label}
-                  </a>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </div>
-    )
+    </div>)
   }
 </div>
 
 <style>
   @layer starlight.core {
     h1 {
-      font-size: 7rem !important;
-      line-height: 6.5rem !important;
-      letter-spacing: -4px;
+      font-size: 5rem !important;
+      line-height: 5.5rem !important;
+      letter-spacing: -3.5px;
       color: var(--sl-color-white);
     }
     .search-container {

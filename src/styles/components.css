@@ -19,10 +19,16 @@
 .light-text {
   @apply text-lightmode-text/50 dark:text-text/50 block;
 }
+
+.light-text-non-block {
+  @apply text-lightmode-text/50 dark:text-text/50;
+}
+
 .section-title {
-  font-size: 4.8rem;
-  line-height: 4.7rem;
-  letter-spacing: -3px;
+  font-size: 3.5rem;
+  line-height: 3.5rem;
+  letter-spacing: -2.7px;
+  font-weight: 400;
 }
 
 .section-description {
