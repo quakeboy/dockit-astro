@@ -1,11 +1,11 @@
 {
   "site": {
-    "title": "DocKit",
-    "logo": "/src/assets/logo-light.svg",
-    "logo_darkmode": "/src/assets/logo-dark.svg",
-    "logo_width": "127",
+    "title": "MarketingStrategy.dev",
+    "logo": "/src/assets/marketingstrategy.dev-logo.svg",
+    "logo_darkmode": "/src/assets/marketingstrategy.dev-logo.svg",
+    "logo_width": "240",
     "logo_height": "32",
-    "logo_text": "DocKit"
+    "logo_text": "MarketingStrategy.dev"
   },
 
   "settings": {
