@@ -1,0 +1,321 @@
+---
+title: Dockit Build Documentation with Old UI
+description: Get started building your docs site with DocKit.
+template: splash
+hero:
+  title: |
+    <span class="light-text-non-block">"Our most expensive mistakes have been in the direction of </span>we didn't really figure out marketing for a really long time."
+  tagline: "Avery Pennarun, Co-founder & CEO - Tailscale"
+---
+
+import Section from "~/components/Section.astro";
+import Card from "~/components/user-components/NewCard.astro";
+import Grid from "~/components/user-components/Grid.astro";
+
+<Section title="Are you at a stage where
+<span class='light-text'>the following statements resonate?</span>" description="Read the statements below">
+
+<Grid columns={4}>
+  <Card title="You don't know what 'good marketing' looks like for your company">
+  </Card>
+
+<Card title="You've trouble judging (and therefore hiring) marketing talent."></Card>
+<Card title="You need someone who understands engineers, not just marketing tactics"></Card>
+
+<Card title="You can't explain why your early growth happened, let alone repeat it"></Card>
+
+</Grid>
+</Section>
+
+<section class="flex justify-center py-16">
+  <div class="max-w-5xl text-xl">
+    <Grid columns={2}>
+      ## How do you fix these? 
+      It's not more campaigns. <br /> It's not hiring
+      another marketing expert. <br /> <br /> It's someone embedded with your
+      team who can see the patterns you're missing, help you make the right
+      strategic bets, and actually lead the work while you focus on what you do
+      best.
+    </Grid>
+  </div>
+</section>
+
+import NarrowText from "~/components/user-components/NarrowText.astro";
+
+<Section title="Marketing Strategy & Leadership
+<span class='light-text'>With A Fractional Engagement</span>">
+<NarrowText>
+
+I don't sit on the sidelines. I work inside your company, embedded with your team.
+That means I'm holding standups with our team. I'm working directly with our team on the campaigns that matter. I'm helping you make the strategic calls in real-time, not reviewing decisions after they're made.
+You get a fractional leader who thinks about your long-term marketing strategy while actually leading the execution. The strategy and the leadership come together.
+
+#### What that looks like:
+
+- Quarterly strategy sessions and reviews where we look at what's moving the needle (and what isn't)
+- I hire and build the team for our company.
+- Weekly / Fortnightly check-ins with the rest of the leadership team to report progress
+- I'm holding standups with our team, understanding what's happening frequently
+- I'm the Slack channels embedded with our team participating in conversations as needed
+- When a campaign needs to pivot mid-quarter, we adjust together
+- Your team knows what the strategy is because I'm explaining it while we're building it, not after
+
+This is different from hiring a consultant who audits your work. Different from hiring a full-time marketing leader. It's fractional leadership. Strategic direction and leading execution, at a cadence that makes the team 
+
+</NarrowText>
+
+</Section>
+
+import Testimonial from "~/components/user-components/Testimonial.astro";
+
+<Testimonial 
+  name="Mumshad Mannambeth" 
+  title="Founder & CEO at KodeKloud"
+>
+  “I had a lot of issues handling the operations and marketing side of my
+  business. There was nobody to lead marketing activities, we didn’t have a
+  marketing strategy in place. I had to do everything from product to platform
+  to marketing by myself. And I couldn’t focus on any of these fully. I needed
+  someone to take over the website and marketing side of things and lead it,
+  build marketing strategy, run campaigns and monitor results 
+  
+  ... 
+  
+  Our
+  work together helped me focus on our courses which is an important aspect of
+  our platform, as well as growing our team. Raj is a smart and talented
+  marketer with good leadership skills, knowledge of modern technology and
+  tools, and great communication skills. His ability to research and identify
+  the right solutions, setup automation and lead a team of developers helped us
+  build a new learning platform from scratch and provide our users with a better
+  experience..”
+</Testimonial>
+
+import HeroTabs from "~/components/HeroTabs.astro";
+import HeroTabsItem from "~/components/HeroTabsItem.astro";
+
+<Section
+  title="Get started quickly <span class='light-text'>in just 3 simple steps</span>"
+  description="A fast and frustration-free way to set up and start your documentation."
+>
+  <HeroTabs>
+    <HeroTabsItem
+      title="Install our template"
+      subtitle="Set up in seconds with our template ."
+      number={1}
+      image="/src/assets/step-1.png"
+      imageAlt="Step 1 image"
+    />
+    <HeroTabsItem
+      title="Import what you need"
+      subtitle="Bring components or functions into projecs."
+      number={2}
+      image="/src/assets/step-2.png"
+      imageAlt="Step 2 image"
+    />
+    <HeroTabsItem
+      title="Start documentation"
+      subtitle="Start documenting your project immediately."
+      number={3}
+      image="/src/assets/step-3.png"
+      imageAlt="Step 3 image"
+    />
+  </HeroTabs>
+</Section>
+
+import ListCard from "~/components/user-components/ListCard.astro";
+import LinkButton from "~/components/LinkButton.astro";
+
+<Section title="Feature topics for <span class='light-text'>our documentation</span>" description="Explore our featured topics and get an idea of our capabilities.">
+
+<Grid columns={3}>
+<ListCard title="UI Components" imageIcon="/src/assets/element.svg" imageFormat="svg" number="15">
+- [Buttons & Links](/contents/components/using-components/)
+- [Navigation Menus](/contents/components/using-components/)
+- [Cards & Panels](/contents/components/using-components/)
+- [Tabs & Accordions](/contents/components/using-components/)
+- [Forms & Inputs](/contents/components/using-components/)
+- [Tables & Lists](/contents/components/using-components/)
+
+<LinkButton href="/contents/components/using-components/" variant="text" className="mt-6 mb-8 ml-4">View all components</LinkButton>
+</ListCard>
+
+<ListCard title="Content Writing" imageIcon="/src/assets/content.svg" imageFormat="svg" number="18">
+- Markdown Basics
+- MDX Components
+- Code Examples
+- API Documentation
+- Tutorial Writing
+- Best Practices
+
+<LinkButton href="/contents/editing/add-new-doc/" variant="text" className="mt-6 mb-8 ml-4">View writing guide</LinkButton>
+</ListCard>
+
+<ListCard title="Page Layouts" imageIcon="/src/assets/layouts.svg" imageFormat="svg" number="8">
+- Homepage Templates
+- Documentation Pages
+- API Reference Layout
+- Tutorial Structure
+- Landing Pages
+- Error Pages
+
+<LinkButton href="/getting-started/introduction/overview/" variant="text" className="mt-6 mb-8 ml-4">View layouts</LinkButton>
+</ListCard>
+</Grid>
+
+<Grid columns={3}>
+
+<ListCard title="Code Syntax" imageIcon="/src/assets/code-block.svg" number="10" image="/src/assets/code-image.png" imageFormat="svg" >
+
+- Syntax Highlighting
+- Line Numbers
+- Copy Button
+- Language Labels
+- Diff Highlighting
+- File Names
+
+<LinkButton
+  href="/getting-started/introduction/overview/"
+  variant="text"
+  className="mt-6 mb-8 ml-4"
+>
+  View code guide
+</LinkButton>
+
+</ListCard>
+
+<ListCard title="Version History" imageIcon="/src/assets/changelogs.svg" iconFormat="svg" number="25">
+
+- Release Notes
+- Feature Updates
+- Bug Fixes
+- Breaking Changes
+- Migration Guides
+- Deprecated Features
+
+<LinkButton
+  href="/getting-started/introduction/overview/"
+  variant="text"
+  className="mt-6 mb-8 ml-4"
+>
+  View changelog
+</LinkButton>
+
+</ListCard>
+
+</Grid>
+ 
+</Section>
+
+
+
+import ThemeDemo from "~/components/ThemeDemo.astro";
+
+<Section
+  title="Switch easily from <span class='light-text'>dark/light mode</span>"
+  description="Dedicated toggle button to switch between dark and light mode."
+>
+
+<ThemeDemo
+  darkImage="/src/assets/darkmode-demo.png"
+  lightImage="/src/assets/lightmode-demo.png"
+/>
+
+</Section>
+
+import AccordionContainer from "~/components/AccordionContainer.astro";
+import Accordion from "~/components/Accordion.astro";
+
+<Section
+  title="Have question? <span class='light-text'>We’re here to help</span>"
+  description="Get answers to the general questions people have asked."
+>
+
+<AccordionContainer tabList={
+  [
+    {
+      type: 'basic',
+      title: 'Getting Started',
+      subtitle:'Some questions about how to start.',
+      icon: "rocket"
+
+    },
+    {
+      type: 'setting',
+      title: 'Settings & Configurations',
+      subtitle:'How to configure our documentation.',
+      icon: "settings"
+
+    },
+    {
+      type: 'help',
+      title: 'Help & Support',
+      subtitle:'What type of support we provide.',
+      icon: "support"
+
+    }
+
+]
+}>
+
+<Accordion
+  question="How do I get started with Dockit?"
+  answer="Simply install our template, import the components you need, and start documenting your project. The setup process takes just a few minutes."
+  type="basic"
+/>
+<Accordion
+  question="What are the system requirements?"
+  answer="Dockit requires Node.js 18+ and works with any modern web browser. It's built on Astro and supports all major operating systems."
+  type="basic"
+/>
+<Accordion
+  question="Is Dockit free to use?"
+  answer="Yes, Dockit is completely free and open source. You can use it for personal and commercial projects without any limitations."
+  type="basic"
+/>
+<Accordion
+  question="Can I customize the design?"
+  answer="Absolutely! Dockit is highly customizable with Tailwind CSS. You can modify colors, layouts, components, and add your own branding."
+  type="basic"
+/>
+
+<Accordion
+  question="How do I change the theme colors?"
+  answer="You can customize theme colors by modifying the CSS custom properties in your theme configuration file or through the Tailwind config."
+  type="setting"
+/>
+<Accordion
+  question="Can I add custom components?"
+  answer="Yes, you can create and add custom Astro components. Simply place them in the components folder and import them where needed."
+  type="setting"
+/>
+<Accordion
+  question="How do I configure navigation?"
+  answer="Navigation is configured through the menu.json file in your config folder. You can add, remove, or reorder menu items as needed."
+  type="setting"
+/>
+<Accordion
+  question="Can I use my own domain?"
+  answer="Yes, you can deploy Dockit to any hosting service and use your custom domain. We provide deployment guides for popular platforms."
+  type="setting"
+/>
+
+<Accordion
+  question="Where can I get help?"
+  answer="You can get help through our GitHub discussions, documentation, or community Discord server. We also provide email support for complex issues."
+  type="help"
+/>
+<Accordion
+  question="How do I report bugs?"
+  answer="Please report bugs through our GitHub issues page with detailed information about the problem and steps to reproduce it."
+  type="help"
+/>
+<Accordion
+  question="Do you offer premium support?"
+  answer="While Dockit is free, we offer premium consulting services for custom implementations and enterprise deployments."
+  type="help"
+/>
+
+</AccordionContainer>
+
+</Section>
