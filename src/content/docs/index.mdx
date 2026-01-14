@@ -227,30 +227,30 @@ import AccordionContainer from "~/components/AccordionContainer.astro";
 import Accordion from "~/components/Accordion.astro";
 
 <Section
-  title="Have question? <span class='light-text'>We’re here to help</span>"
-  description="Get answers to the general questions people have asked."
+  title="Have questions? <span class='light-text'>These are frequently asked.</span>"
+  description=""
 >
 
 <AccordionContainer tabList={
   [
     {
       type: 'basic',
-      title: 'Getting Started',
-      subtitle:'Some questions about how to start.',
+      title: 'About fractional',
+      subtitle:'Hearing it for the first time?',
       icon: "rocket"
 
     },
     {
       type: 'setting',
-      title: 'Settings & Configurations',
-      subtitle:'How to configure our documentation.',
+      title: 'Is this for you?',
+      subtitle:'To help you figure out',
       icon: "settings"
 
     },
     {
       type: 'help',
-      title: 'Help & Support',
-      subtitle:'What type of support we provide.',
+      title: 'How do I help?',
+      subtitle:'Problems I solve for you',
       icon: "support"
 
     }
@@ -259,25 +259,34 @@ import Accordion from "~/components/Accordion.astro";
 }>
 
 <Accordion
-  question="How do I get started with Dockit?"
-  answer="Simply install our template, import the components you need, and start documenting your project. The setup process takes just a few minutes."
-  type="basic"
-/>
+  question="What is a Fractional Marketing Strategist + Leader"
+  type="basic">
+
+A Fractional Marketing Leader is a marketing executive serving businesses by leading marketing strategy, sales development, growth opportunities, and heading the marketing department. 
+
+Businesses use fractional C-level services because they do not need a full-time C-level executive but still require expert strategy and leadership. Businesses enjoy the flexibility that a fractional executive provides. 
+
+Often, it makes sense to bring in a fractional chief marketing officer as opposed to full-time. This can be for financial reasons, as a typical full-time CMO salary can cost more than $200,000 per year. It could also be because the work needed to be done by the CMO does not require a full-time position.
+
+</Accordion>
+
 <Accordion
-  question="What are the system requirements?"
-  answer="Dockit requires Node.js 18+ and works with any modern web browser. It's built on Astro and supports all major operating systems."
-  type="basic"
-/>
-<Accordion
-  question="Is Dockit free to use?"
-  answer="Yes, Dockit is completely free and open source. You can use it for personal and commercial projects without any limitations."
-  type="basic"
-/>
-<Accordion
-  question="Can I customize the design?"
-  answer="Absolutely! Dockit is highly customizable with Tailwind CSS. You can modify colors, layouts, components, and add your own branding."
-  type="basic"
-/>
+  question="What are their responsibilities?"
+  type="basic">
+
+- Developing the marketing strategy for both the short-term and long-term.
+- Deciding and committing to which marketing strategies are best for your business, such as SEO, content marketing, paid advertising, or a podcast, etc. 
+- Solving marketing problems that will arise and need to be resolved quickly.
+- Leading the marketing department and inspiring team members. 
+- Hiring new employees and building out your team for success.
+- Working with outsourced agencies leaning on their experience. 
+
+Your Fractional CMO should have a wealth of marketing and managerial experience. Therefore, the Fractional CMO should be the natural leader of the marketing team.
+
+In addition to leadership qualities, the Fractional CMO is to be seen as the c-suite level marketing strategist who helps organizations achieve their marketing goals. Your Fractional CMO will work closely with both your organization’s leadership team and the marketing talent executing the marketing tactics on a day-to-day basis.
+
+</Accordion>
+
 
 <Accordion
   question="How do I change the theme colors?"

@@ -1,5 +1,5 @@
 ---
-const { type, question, answer } = Astro.props;
+const { type, question } = Astro.props;
 ---
 
 <div
@@ -32,7 +32,7 @@ const { type, question, answer } = Astro.props;
     </div>
   </div>
   <div class="accordion-body">
-    {answer}
+    <slot />
   </div>
 </div>
 
