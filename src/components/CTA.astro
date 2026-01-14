@@ -19,16 +19,16 @@ const { title, description, enable, fill_button, outline_button } =
       <Section title={title} description={description}>
         {fill_button?.enable && (
           <Button
-            label={fill_button.label || "Get Started"}
-            link={fill_button.link || "/getting-started/introduction/overview/"}
+            label={fill_button.label || "Book A 15-Min Clarity Call"}
+            link={fill_button.link || "https://tidycal.com/rajavanya/15-min-clarity-call"}
             variant="primary"
           />
         )}
         {outline_button?.enable && (
           <Button
-            label={outline_button.label || "Get a live demo"}
+            label={outline_button.label || "See My Services"}
             link={
-              outline_button.link || "/getting-started/introduction/overview/"
+              outline_button.link || "/my-services/"
             }
             variant="outline-primary"
           />
@@ -47,7 +47,7 @@ const { title, description, enable, fill_button, outline_button } =
 
   /* Dark mode styling */
   :global([data-theme="dark"]) .cta-container {
-    background: url("/src/assets/cta-bg.png") no-repeat center;
+    background: url("/src/assets/hero-bg-dark.png") no-repeat center;
     background-size: cover;
     padding: 1rem;
     position: relative;

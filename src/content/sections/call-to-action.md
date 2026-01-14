@@ -1,14 +1,14 @@
 ---
 title: |
-  Ready to explore <span class='light-text'>Dockit experience? </span>
-description: Discover tips, resources, and guidance to maximize experience with our documentation.
+  Scale beyond word-of-mouth <span class='light-text'>Stop guessing, build predictable systems</span>
+description: Turn your early traction into a system. Get your dev-tool in front of the right engineers.
 enable: true
 fill_button:
   enable: true
-  label: Get Started
-  link: /getting-started/introduction/overview/
+  label: Book a 15-min clarity call
+  link: https://tidycal.com/rajavanya/15-min-clarity-call
 outline_button:
   enable: true
-  label: View Docs
-  link: /getting-started/introduction/overview/
+  label: See My Services
+  link: /my-services
 ---
