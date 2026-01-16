@@ -189,20 +189,22 @@ const { hasSidebar } = Astro.locals.starlightRoute;
     initializeSidebar();
   }
 
-  // accordion
-  const accordions = document.querySelectorAll(
-    ".accordion"
-  ) as NodeListOf<HTMLElement>;
-
-  accordions.forEach((accordion) => {
-    // close other accordions when one is opened
-    accordion.addEventListener("click", () => {
-      accordions.forEach((otherAccordion) => {
-        if (otherAccordion !== accordion) {
-          otherAccordion.classList.remove("active");
-        }
-      });
-      accordion.classList.toggle("active");
+// accordion
+const accordions = document.querySelectorAll(".accordion") as NodeListOf<HTMLElement>;
+accordions.forEach((accordion) => {
+  const header = accordion.querySelector(".accordion-header");
+  
+  header?.addEventListener("click", (e) => {
+    e.stopPropagation(); // Prevent bubbling
+    
+    accordions.forEach((otherAccordion) => {
+      if (otherAccordion !== accordion) {
+        otherAccordion.classList.remove("active");
+      }
     });
+    accordion.classList.toggle("active");
   });
+});
+</script>
+
 </script>
