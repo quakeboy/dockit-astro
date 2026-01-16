@@ -13,6 +13,7 @@
   --sl-color-accent-high: color-mix(in srgb, var(--color-primary), #fff 70%);
 
   --sl-color-white: var(--color-light);
+  --sl-color-text: var(--color-text);  /* ADD THIS LINE */
   --sl-color-gray-1: color-mix(
     in srgb,
     var(--color-dark) 6%,
@@ -53,6 +54,14 @@
     transparent
   );
   --sl-color-hairline-light:#252525;
+
+--sl-color-hairline: rgba(246, 246, 246, 0.1);
+--sl-color-gray-1: #eeeeee;
+--sl-color-gray-2: #c2c2c2;
+--sl-color-gray-3: #8b8b8b;
+--sl-color-gray-4: #585858;
+--sl-color-gray-5: #383838;
+--sl-color-gray-6: #272727;
 }
 
 /* Light mode colors. */
