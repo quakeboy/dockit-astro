@@ -25,6 +25,9 @@ export default defineConfig({
   integrations: [
     starlight({
       title,
+      markdown: {
+        headingLinks: false,
+      },
       logo: {
         light: logo,
         dark: logo_darkmode,
