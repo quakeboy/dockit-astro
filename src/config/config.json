@@ -1,11 +1,13 @@
 {
   "site": {
     "title": "MarketingStrategy.dev",
+    "author": "Rajavanya Subramaniyan",
     "logo": "/src/assets/marketingstrategy.dev-logo.svg",
     "logo_darkmode": "/src/assets/marketingstrategy.dev-logo.svg",
     "logo_width": "240",
     "logo_height": "32",
-    "logo_text": "MarketingStrategy.dev"
+    "logo_text": "MarketingStrategy.dev",
+    "base_url": "https://marketingstrategy.dev"
   },
 
   "settings": {
@@ -19,7 +21,7 @@
       "enable": true,
       "action": "#"
     },
-    "copyright": "Copyright Rajavanya Subramaniyan EI registered in Reunion Island, France with SIRET #28829910101 &copy; 2025."
+    "copyright": "Copyright Rajavanya Subramaniyan EI registered in Reunion Island, France with SIRET #28829910101 &copy; 2026."
   },
 
   "navigation_button": {
