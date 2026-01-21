@@ -32,37 +32,6 @@ function hasActiveEntry(item: any, currentPath: string): boolean {
 }
 ---
 
-<div class="sidebar-nav">
-  <div class="container h-full">
-    <div class="sidebar-content-top">
-      <ul>
-        {
-          sidebar.map((item: any) => {
-            // Use helper functions to handle nested entries properly
-            const href = getFirstHref(item);
-            const isActive = hasActiveEntry(item, currentPath);
-
-            return (
-              <li>
-                <a
-                  aria-label={plainLabel(item.label)}
-                  href={href}
-                  class={isActive ? "active" : ""}
-                >
-                  {plainLabel(item.label)} 
-                </a>
-              </li>
-            );
-          })
-        }
-      </ul>
-      <div>
-        <LanguageSelect />
-      </div>
-    </div>
-  </div>
-</div>
-
 <style>
   @layer starlight.core {
     .sidebar-nav {
