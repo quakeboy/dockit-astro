@@ -2,8 +2,8 @@
   "site": {
     "title": "MarketingStrategy.dev",
     "author": "Rajavanya Subramaniyan",
-    "logo": "/src/assets/marketingstrategy.dev-logo.svg",
-    "logo_darkmode": "/src/assets/marketingstrategy.dev-logo.svg",
+    "logo": "/marketingstrategy.dev-logo.svg",
+    "logo_darkmode": "/marketingstrategy.dev-logo.svg",
     "logo_width": "240",
     "logo_height": "32",
     "logo_text": "MarketingStrategy.dev",

@@ -28,11 +28,11 @@ export default defineConfig({
       markdown: {
         headingLinks: false,
       },
-      logo: {
-        light: logo,
-        dark: logo_darkmode,
-        alt: "DocKit Logo",
-      },
+      // logo: {
+      //   light: logo,
+      //   dark: logo_darkmode,
+      //   alt: "DocKit Logo",
+      // },
       // @ts-ignore
       social: social.main || [],
       locales,
