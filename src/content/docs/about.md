@@ -15,7 +15,7 @@ Hey there, I'm Rajavanya Subramaniyan and I live in 🇷🇪 Reunion Island (Fra
 - Started at 18 with Flash 5, moved to iOS game dev. Shipped some titles that hit top 10 worldwide. At 24, led a 15-person game dev services team after our company raised from IDG & Sequoia. Moved to Bangkok to make match-3 games published by Rovio at the time.
  
 ###### The shift
-- Somewhere along the way, life kicked me in the face and I woke up to the world of product/marketing. Also got disillusioned when I realized the match-3 games we were making were just reskinned slot machines - and nobody seemed to care when I pointed this out 😆
+- Somewhere along the way, life kicked me in the face and I woke up to the world of product/marketing. Also got disillusioned when I realized the match-3 games we were making were just reskinned slot machines - and even the players didn't seem to care when I pointed this out 😆
 - Met people, read books that opened my eyes to the human side. Started tinkering with marketing in my off-hours. Eventually quit to figure it out properly.
  
 ###### Second decade: marketing
