@@ -2,6 +2,7 @@
 import { getEntry } from "astro:content";
 import Button from "./user-components/Button.astro";
 import Section from "./Section.astro";
+import ImageMod from "./ImageMod.astro";
 
 const locale = Astro.currentLocale || "en";
 
@@ -16,6 +17,17 @@ const { title, description, enable, fill_button, outline_button } =
 {
   enable && (
     <div class="cta-container">
+      <div class="hero-bg">
+        <ImageMod
+          src="/src/assets/hero-bg-dark.png"
+          alt="CTA Background Dark"
+          class="hidden dark:block object-cover w-full h-full"
+          loading="eager"
+          width={1920}
+          height={820}
+          fetchpriority="high"
+        />
+      </div>
       <Section title={title} description={description}>
         {fill_button?.enable && (
           <Button
@@ -47,8 +59,8 @@ const { title, description, enable, fill_button, outline_button } =
 
   /* Dark mode styling */
   :global([data-theme="dark"]) .cta-container {
-    background: url("/src/assets/hero-bg-dark.png") no-repeat center;
-    background-size: cover;
+    /* background: url("/src/assets/hero-bg-dark.png") no-repeat center;
+    background-size: cover; */
     padding: 1rem;
     position: relative;
   }
