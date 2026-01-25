@@ -30,8 +30,9 @@ Now focused on developer tools and platforms. The dev background gives me a weir
 I've been extremely fortunate to have been able to visit / live in multiple countries. I've learnt timeless lessons about culture, understanding people and myself.
 
 #### Social Links
-- [LinkedIn](https://www.linkedin.com/in/rajavanya/) - Connect With Me
-- [GitHub](https://github.com/quakeboy) - Follow Me
+- [LinkedIn](https://www.linkedin.com/in/rajavanya/) - Connect with me
+- [GitHub](https://github.com/quakeboy) - Follow me
+- [Substack](https://market2tech.substack.com) - Subscribe to my articles
 
 #### Other Industries Worked With
 - B2B Automotive / Outdoor + Vehicle Advertising
