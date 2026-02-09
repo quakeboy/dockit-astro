@@ -25,27 +25,25 @@ const is404 = Astro.locals.starlightRoute?.id === "404";
 
 <div class="max-w-screen-xl text-center py-8 lg:py-8 lg:px-12">
   <a class="inline-flex justify-between items-center py-1 px-1 p-4 text-sm rounded-full border-2" role="alert">
-      <span class="text-sm font-medium pl-4 pr-4">This is an unmodified quote from the founder of Tailscale in an interview...</span> 
+      <span class="text-sm font-medium pl-4 pr-4">Attention, Dev-Tool Founders...</span>
   </a>
 </div>
 
   {title && <h1 set:html={title} class="mb-8 text-center rounded-2xl" />}
   {tagline && <p set:html={tagline} class="text-xl text-center"/>}
-
   
-
-
   <section>
-    <div class="py-8 px-4 mx-auto lg:py-16 lg:px-6">
+    <div class="py-8 px-4 mx-auto lg:py-16 lg:pb-0 lg:px-6">
         <div class="text-center max-w-4xl text-gray-500 sm:text-lg dark:text-gray-400">
-            <!-- <hr class="border-1 max-w-16 m-auto"> -->
-            <h2 class="mt-8 py-12 text-4xl tracking-tight font-bold text-gray-900 dark:text-white">Building a company that serves developers is hard... but, you don't have to figure out the marketing yourself</h2>
+            <hr class="border-1 max-w-16 m-auto">
+            <h2 class="mt-8 py-12 text-4xl tracking-tight font-bold text-gray-900 dark:text-white">"Our most expensive mistakes have been in the direction of we didn't really figure out marketing for a really long time." - <span class="light-text-non-block">Avery Pennarun, Co-founder & CEO - Tailscale</span></h2>
             <div class="text-left max-w-2xl mb-4 font-light m-auto">
-              <p class="mb-4">A while ago you've realized you cannot build an actual business on just word-of-mouth or the unrepeatable growth spikes from being on the front page of <i>Product Hunt, Hacker News</i> etc. You cannot rely on luck.</p>
+              <p class="mb-4">Building a company that serves developers is hard... but, you don't have to figure out the marketing yourself</p>
+              <p class="mb-4">A while ago you've realized you cannot build an actual business on just word-of-mouth or the unrepeatable growth spikes. You cannot rely on luck.</p>
               <p class="mb-4">You built something developers want to use. That part worked.</p>
               <p class="mb-4">
                 The problem is, the right developers don't realize you solve their problem the way they want it solved.
-                So you're invisible to them. And the developers who do find you aren't the ones who matter for your business.
+                So you're invisible to them. And the developers who do find you aren't the ones who matter for your company.
               </p>
               <p class="mb-4">
                 This is a marketing strategy problem. (and no, I'm not here to throw strategy and sit on the sidelines. But more on that later...)               </p>
@@ -65,6 +63,7 @@ Here's what this looks like in practice:
   It's not that you're bad at marketing. It's that so far you've hired marketing experts but not someone who can lead and show you how your entire company's marketing has to work.
 </p>
 <p class="mb-4">You could spend months (or even a couple of years) optimizing the wrong things. Like others have. Or you could figure out what's actually off right now.</p>
+<p class="mb-4">Book a 15-min no-cost clarity all on my calendar below and we’ll discuss where you are and what your next step needs to be to grow predictably. No fluff, no sales pressure. Just clarity.</p>
             </div>
             <!-- <a href="#" class="inline-flex items-center font-medium text-primary-600 hover:text-primary-800 dark:text-primary-500 dark:hover:text-primary-700">
                 Learn more
@@ -79,7 +78,7 @@ Here's what this looks like in practice:
     !is404 && (
     <div class="flex gap-4 justify-center mt-8">
           <Button
-            label="Book a 15-min Clarity Call"}
+            label="Book a Free 15-min Clarity Call"}
             link="https://tidycal.com/rajavanya/15-min-clarity-call"
             variant="primary"
           />
@@ -96,8 +95,8 @@ Here's what this looks like in practice:
 <style>
   @layer starlight.core {
     h1 {
-      font-size: 5rem !important;
-      line-height: 5.5rem !important;
+      font-size: 4.6rem !important;
+      line-height: 5rem !important;
       letter-spacing: -3.5px;
       color: var(--sl-color-white);
     }

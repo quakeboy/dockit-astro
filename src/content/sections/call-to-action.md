@@ -5,7 +5,7 @@ description: Turn your early traction into a system. Get your dev-tool in front 
 enable: true
 fill_button:
   enable: true
-  label: Book a 15-min clarity call
+  label: Book a Free 15-min clarity call
   link: https://tidycal.com/rajavanya/15-min-clarity-call
 outline_button:
   enable: true
