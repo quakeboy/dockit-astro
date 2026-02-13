@@ -10,6 +10,10 @@
         {
           "label": "[seti:open-book] About Me",
           "slug": "about"
+        },
+        {
+          "label": "[seti:open-book] My Talks/Videos",
+          "slug": "my-talks"
         }
 
       ]
