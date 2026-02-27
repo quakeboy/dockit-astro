@@ -24,6 +24,15 @@ export default defineConfig({
   },
   integrations: [
     starlight({
+      head: [
+        {
+          tag: 'script',
+          attrs: {
+            src: '/scripts/custom.js',
+            defer: true,
+          },
+        },
+      ],
       title,
       markdown: {
         headingLinks: false,
